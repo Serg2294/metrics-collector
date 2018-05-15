@@ -3,7 +3,7 @@ if [ -n "$1" ]
 then
   if [ "$1" == "del" ]
   then
-    docker rmi $(docker images -f dangling=true -q)
+    docker rmi metrics-collector
   else
     docker build -t metrics-collector .
     docker run -ti --rm metrics-collector python script.py $1
