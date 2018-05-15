@@ -6,7 +6,7 @@ then
     docker rmi metrics-collector
   else
     docker build -t metrics-collector .
-    docker run -ti --rm metrics-collector python script.py $1
+    docker run -ti --rm --pid host --network host metrics-collector python script.py $1
   fi
 else
   echo "No parameters found. Please write cpu or mem."
