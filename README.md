@@ -16,6 +16,7 @@ After that you will get three files:
 1. Dockerfile - instruction for docker build command.
 2. metrics - script with parameters that creates docker image and starts container.
 3. script.py - python script that collects metrics inside docker container.
+Put all this files into one directory.
 
 To start script make **metrics** file executable via command:
 
