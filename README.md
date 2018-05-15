@@ -2,8 +2,8 @@
 
 ## What is it?
 
-Metrics-collector is util, that uses python functions to get system metrics about ***CPU*** an ***RAM***
-and shows user.
+Metrics-collector is util, that uses python functions to get system metrics about ***CPU*** and ***RAM***
+and shows it to user.
 
 ## What do you need?
 
@@ -37,7 +37,7 @@ To collect memory metrics use command:
 ./metrics mem
 ```
 
-When you finish to use util, you can clear temporary images via command:
+When you finish to use metrics-collector, you can clear temporary images via command:
 
 ```sh
 ./metrics del
