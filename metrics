@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -n "$1" ]
+then
+  if [ "$1" == "del" ]
+  then
+    docker rmi $(docker images -f dangling=true -q)
+  else
+    docker build -t metrics-collector .
+    docker run -ti --rm metrics-collector python script.py $1
+  fi
+else
+  echo "No parameters found. Please write cpu or mem."
+fi
